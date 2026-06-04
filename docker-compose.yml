@@ -1,7 +1,6 @@
-# Full stack: pgvector DB + FastAPI backend + nginx-served frontend.
+# Full stack: pgvector DB + single app image (FastAPI serves frontend + API).
 #   docker compose up --build
-#   frontend -> http://localhost:8080   (proxies /api/ to backend)
-#   backend  -> http://localhost:8000   (direct API + /docs)
+#   app -> http://localhost:8080   (UI at /, API at /api/..., docs at /docs)
 #
 # DB is internal-only (not published) so it won't clash with any host
 # Postgres or the standalone backend/docker-compose.yml container.
@@ -20,8 +19,8 @@ services:
       timeout: 5s
       retries: 10
 
-  backend:
-    build: ./backend
+  app:
+    build: .
     environment:
       DATABASE_URL: postgresql+psycopg://rm:rm@db:5432/rmsolver
       LLM_BASE_URL: ${LLM_BASE_URL:-https://some-url}
@@ -34,14 +33,7 @@ services:
       db:
         condition: service_healthy
     ports:
-      - "8011:8000"
-
-  frontend:
-    build: .
-    depends_on:
-      - backend
-    ports:
-      - "8090:80"
+      - "${APP_PORT:-8080}:8000"
 
 volumes:
   rm_pgdata:
