@@ -7,7 +7,7 @@
 # Needs a reachable Postgres (pgvector) via DATABASE_URL — see docker-compose.yml.
 
 # ── frontend build stage ──
-FROM node:20-alpine AS web
+FROM node:18-alpine AS web
 WORKDIR /web
 RUN npm install -g pnpm@10
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
