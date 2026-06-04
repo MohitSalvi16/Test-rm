@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import { LogIn } from 'lucide-react';
+import brandLogo from '@/assets/brand-logo.svg';
 
 export function Login() {
   const navigate = useNavigate();
@@ -16,9 +16,7 @@ export function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
         <div className="flex justify-center mb-6">
-          <div className="bg-indigo-600 p-4 rounded-full">
-            <LogIn className="w-8 h-8 text-white" />
-          </div>
+          <img src={brandLogo} alt="RM Portal" className="w-24 h-24" />
         </div>
         
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-2">
