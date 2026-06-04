@@ -1,0 +1,12 @@
+# Python virtualenv
+.venv/
+venv/
+
+# Secrets — keep .env.example, never .env
+.env
+
+# Bytecode / cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/

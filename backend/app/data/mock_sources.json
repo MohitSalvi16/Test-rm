@@ -1,0 +1,25 @@
+{
+  "linkedin": [
+    {"external_id": "li-1", "author": "Rohan Mehta", "rating": null, "text": "The bank's relationship managers are responsive but the mobile app keeps logging me out every few minutes. Annoying for business accounts."},
+    {"external_id": "li-2", "author": "Priya Nair", "rating": null, "text": "Loved the new fixed deposit rates announced this quarter. Sales team explained the options clearly."},
+    {"external_id": "li-3", "author": "Anonymous", "rating": null, "text": "bakwas service, total waste, who even reads this lol"},
+    {"external_id": "li-4", "author": "Karthik Rao", "rating": null, "text": "Security concern: I received an SMS OTP for a transaction I never initiated. Support said it was a glitch. This is serious."}
+  ],
+  "google_review": [
+    {"external_id": "gr-1", "author": "Sneha P", "rating": 2.0, "text": "Increasing my credit card limit through the app is extremely confusing. The flow has too many steps and no clear confirmation."},
+    {"external_id": "gr-2", "author": "Amit J", "rating": 1.0, "text": "App crashed during a fund transfer and money was debited but not credited for 2 days. Tech needs to fix this urgently."},
+    {"external_id": "gr-3", "author": "Meera", "rating": 5.0, "text": "Branch staff were super helpful, sorted my KYC in 10 minutes."},
+    {"external_id": "gr-4", "author": "ghost123", "rating": 1.0, "text": "asdf asdf random nonsense bakwas review"}
+  ],
+  "app_store": [
+    {"external_id": "as-1", "author": "investor_07", "rating": 2.0, "text": "The UI for the investments dashboard is cluttered. Charts overlap on smaller iPhones. Hard to read my portfolio."},
+    {"external_id": "as-2", "author": "dailyuser", "rating": 3.0, "text": "Fingerprint login fails about half the time and I have to type the full password. Please fix the biometric flow."},
+    {"external_id": "as-3", "author": "happycustomer", "rating": 5.0, "text": "Best banking app I have used, bill payments are instant."}
+  ],
+  "play_store": [
+    {"external_id": "ps-1", "author": "Suresh K", "rating": 1.0, "text": "Cannot reset my MPIN. The reset link in the app does nothing. Customer care had me waiting 40 minutes."},
+    {"external_id": "ps-2", "author": "Divya R", "rating": 2.0, "text": "Loan EMI section shows the wrong outstanding amount. This is a business/finance data accuracy problem."},
+    {"external_id": "ps-3", "author": "spam_bot", "rating": 5.0, "text": "click my link free money bakwas spam"},
+    {"external_id": "ps-4", "author": "Naveen", "rating": 3.0, "text": "Dark mode would be nice. Also the font is a bit small for older users."}
+  ]
+}
