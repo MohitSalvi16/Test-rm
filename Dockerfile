@@ -16,7 +16,7 @@ COPY . .
 RUN pnpm build
 
 # ── backend + static serve stage ──
-FROM python:3.12-slim
+FROM public.ecr.aws/docker/library/python:3.12-slim
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1
