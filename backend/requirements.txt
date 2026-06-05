@@ -2,12 +2,12 @@ fastapi==0.115.6
 uvicorn[standard]==0.34.0
 pydantic>=2.9,<3
 pydantic-settings>=2.5,<3
-SQLAlchemy==2.0.36
-psycopg[binary]==3.2.3
+SQLAlchemy>=2.0.36,<2.1
+psycopg[binary]>=3.2
 pgvector==0.3.6
 requests==2.32.3
 python-multipart==0.0.20
 python-dotenv==1.0.1
-numpy==2.2.1
+numpy>=2.2
 # Optional, for high-quality embeddings. Falls back to a hash embedder if absent.
 # sentence-transformers==3.3.1
