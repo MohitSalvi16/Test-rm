@@ -15,7 +15,7 @@ export function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-3">
           <img
             src="/logo.png"
             alt="Neevaran"
@@ -25,6 +25,10 @@ export function Login() {
             }}
           />
         </div>
+
+        <p className="text-center text-gray-600 mb-8">
+          An AI powered Feedback Analysis Platform
+        </p>
 
         <form onSubmit={handleLogin} className="space-y-6">
           <div>
