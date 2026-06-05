@@ -88,8 +88,7 @@ export function Dashboard() {
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="Neevaran" className="w-11 h-11 object-contain" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-800">Neevaran</h1>
-              <p className="text-gray-600">Welcome back, Relationship Manager</p>
+              <p className="text-gray-600">Welcome back</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
