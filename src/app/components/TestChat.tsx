@@ -16,9 +16,9 @@ type Msg = { role: 'user' | 'assistant'; content: string };
 // API is same-origin so the base is empty. Override with VITE_CHAT_API if needed.
 const API_BASE =
   (import.meta.env.VITE_CHAT_API as string | undefined) ??
-  (typeof window !== 'undefined' && window.location.port === '5173'
-    ? 'http://localhost:8000'
-    : '');
+  // In the Vite dev server (any port) talk to the backend on :8000.
+  // In the production single-image build the API is same-origin (empty base).
+  (import.meta.env.DEV ? 'http://localhost:8000' : '');
 
 export function TestChat() {
   const [open, setOpen] = useState(false);
