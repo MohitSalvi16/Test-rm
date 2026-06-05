@@ -95,7 +95,13 @@ export function Dashboard() {
           <div className="flex items-center gap-4">
             <div className="text-right">
               <p className="text-sm font-medium text-gray-700">Today's Date</p>
-              <p className="text-sm text-gray-600">June 4, 2026</p>
+              <p className="text-sm text-gray-600">
+                {new Date().toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </p>
             </div>
           </div>
         </div>
