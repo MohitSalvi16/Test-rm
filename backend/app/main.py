@@ -44,6 +44,10 @@ app.include_router(ingest.router, prefix="/api")
 app.include_router(complaints.router, prefix="/api")
 app.include_router(tickets.router, prefix="/api")
 
+# TEST-CHAT (removable): delete these 2 lines + routers/chat.py to remove.
+from .routers import chat as _test_chat  # noqa: E402
+app.include_router(_test_chat.router, prefix="/api")
+
 
 @app.get("/api/health", tags=["meta"])
 def health():
