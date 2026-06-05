@@ -21,7 +21,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="RM-Solver Agentic Flow", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title="Neevaran", version="1.0.0", lifespan=lifespan)
 
 # Allow the Vite frontend (localhost:5173) to call the API.
 app.add_middleware(

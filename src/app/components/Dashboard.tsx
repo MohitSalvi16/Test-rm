@@ -85,9 +85,12 @@ export function Dashboard() {
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div>
-            <h1 className="text-2xl font-bold text-gray-800">RM Dashboard</h1>
-            <p className="text-gray-600">Welcome back, Relationship Manager</p>
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="Neevaran" className="w-11 h-11 object-contain" />
+            <div>
+              <h1 className="text-2xl font-bold text-gray-800">Neevaran</h1>
+              <p className="text-gray-600">Welcome back, Relationship Manager</p>
+            </div>
           </div>
           <div className="flex items-center gap-4">
             <div className="text-right">

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import brandLogo from '@/assets/brand-logo.svg';
+import neevaranLogo from '@/assets/neevaran-logo.svg'; // fallback if /logo.png missing
 
 export function Login() {
   const navigate = useNavigate();
@@ -15,13 +15,17 @@ export function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
-        <div className="flex justify-center mb-6">
-          <img src={brandLogo} alt="RM Portal" className="w-24 h-24" />
+        <div className="flex justify-center mb-2">
+          <img
+            src="/logo.png"
+            alt="Neevaran"
+            className="w-80 h-auto object-contain mix-blend-multiply"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).src = neevaranLogo;
+            }}
+          />
         </div>
-        
-        <h1 className="text-3xl font-bold text-center text-gray-800 mb-2">
-          RM Portal
-        </h1>
+
         <p className="text-center text-gray-600 mb-8">
           Relationship Manager Dashboard
         </p>
